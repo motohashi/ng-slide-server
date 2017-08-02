@@ -1,0 +1,38 @@
+{
+  "name": "cognitive-server-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc --outDir .dest",
+    "tsc:w": "tsc --outDir .dest --watch",
+    "build": "npm run tsc",
+    "build:w": "npm run tsc:w",
+    "start": "nodemon server.ts --exec ts-node",
+    "s": "ts-node server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/hapi": "^13.0.37",
+    "@types/joi": "^10.0.0",
+    "@types/lodash": "^4.14.36",
+    "@types/node": "^6.0.40",
+    "@types/xml2js": "0.0.32",
+    "concurrently": "^2.2.0",
+    "nodemon": "^1.11.0",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.1.4"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^0.6.0",
+    "app-root-path": "^2.0.1",
+    "core-js": "^2.4.1",
+    "hapi": "^16.0.2",
+    "joi": "^10.1.0",
+    "lodash": "^4.16.1",
+    "watson-developer-cloud": "^2.14.3",
+    "xml2js": "^0.4.17"
+  }
+}
